@@ -66,7 +66,7 @@ class Ab
                     puts "please enter your first name"
                     name1= Array.new
                     name1 = gets.chomp
-                    puts "please enter your last name"
+                    puts "please enter your middle name"
                     name2= Array.new
                     name2 = gets.chomp
                     puts " please enter your last name"
