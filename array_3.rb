@@ -59,29 +59,29 @@
                     obj.searching
 
                     
-                    class Ab
-            
-                        def abr
-              
-                              puts "please enter your first name"
-                              name1= Array.new
-                              name1 = gets.chomp
-                              puts "please enter your last name"
-                              name2= Array.new
-                              name2 = gets.chomp
-                              puts " please enter your last name"
-                              name3= Array.new
-                              name3 = gets.chomp
-                              puts "#{name1[0].upcase}.#{name2[0].upcase}. #{name3}"
-                          end
-                      end
-              
-                        
-                      obj = Ab.new
-                      obj.abr
+class Ab
+
+            def abr
+
+                    puts "please enter your first name"
+                    name1= Array.new
+                    name1 = gets.chomp
+                    puts "please enter your last name"
+                    name2= Array.new
+                    name2 = gets.chomp
+                    puts " please enter your last name"
+                    name3= Array.new
+                    name3 = gets.chomp
+                    puts "#{name1[0].upcase}.#{name2[0].upcase}. #{name3}"
+                end
+    end
+
+                
+                obj = Ab.new
+                obj.abr
 
 
-     
+
 
 
 
