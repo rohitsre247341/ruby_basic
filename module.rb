@@ -1,8 +1,23 @@
+               
+            module Rohit          # module is just like a container
+                def ss
+                  puts "Hello to all"
+                end
+                
+                def ss1
+                  puts "Goodbye to all"
+                end
 
-module Moral
-    VERY_BAD = 0
-    BAD = 1
-    def Moral.sin(badness)
-    # ...
-    end
- end
+            end
+
+            class Rohit2
+
+              include Rohit
+
+            end
+              
+               obj = Rohit2.new
+               obj.ss
+               obj.ss1
+  
+ 
