@@ -20,4 +20,13 @@
                obj.ss
                obj.ss1
   
- 
+          
+               module Greeting
+                
+                def greet(name)
+                  "Hello  #{name}"
+                end
+              end
+
+              include Greeting
+              puts Greeting.greet("sam") 
