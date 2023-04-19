@@ -1,19 +1,50 @@
+# defining class  lets do our class calculator
 
-puts "Enter the first numbers:"
-@num1 = gets.chomp().to_f
-puts "Enter the second"
-@num2 = gets.chomp().to_f
-puts "you can do the given operation on entered numbers"
-puts " multipication =1 , addition =2, subtraction =3 ,"
-puts " Please enter your operation "
-  option = gets.chomp.to_i
-if  option==2
-  puts "the addition is #{@num1 + @num2}"
-elsif option ==1
-  puts "the multiplication of the given number is #{@num1*@num2}"
-elsif option ==3
-  puts " the subtration of given number is #{@num1-@num2}"
-else 
-  puts " invalid option"
-end
+    class Calculator
+    
+      def initialize(number , other)
+            @number= number
+            @other = other
+      end
+
+      def sum
+        puts @number + @other
+      end
+
+      def min
+            if @number > @other
+              puts @number-@other
+            else 
+              puts @other - @number
+            end
+        end
+
+      def multiply 
+        puts @number*@other
+      end  
+
+    end
+      puts "please enter your 1st number"
+      n = gets.chomp.to_i
+      puts "please enter your 2nd number"
+      m = gets.chomp.to_i
+      calculator = Calculator.new(n,m)
+      puts " for addition press :1   for subtration enter :2"
+      puts " for multiplication please enter 3"
+      s = gets.chomp.to_i
+      if s == 1
+        calculator.sum
+      elsif s == 2
+        calculator.min
+      elsif s == 3
+        calculator.multiply
+      else 
+        puts "invalid selection"
+      end
+        
+        
+          
+        
+          
+
 
