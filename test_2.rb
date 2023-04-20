@@ -1,3 +1,4 @@
+#example
 class Sk
 
     def initialize(aa)
