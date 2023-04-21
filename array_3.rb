@@ -46,7 +46,7 @@
                     v    = name.index @b
                     puts " #{@b} is found on #{v} position from starting"
                     d = name.rindex @b
-                    puts " the occurence of #{@b} is on #{d} from last "
+                     puts " the occurence of #{@b} is on #{d} from last "
 
          
                 end
