@@ -1,7 +1,7 @@
 puts "           welcome"
 puts "we are doing sum of two given numbers"
-s =2 
-z =45
+s =300
+z =200
 
 def sum(a,b)
     sume = a+b
