@@ -35,3 +35,33 @@ end
 aa = {:a => "name",:b =>"", :c => "sam"}
 obj = Hashing_1.new(aa)
 obj.array_hash
+
+# dynamic hash
+
+class Dynamically_putting 
+
+  def initialize(s)
+    @s = s
+  end
+
+  def main_1
+    p "here are names and mobile numbers of targeted people"
+    @s.each do |s , v|
+      p "mobile number of #{s} is #{v} "
+    end
+  end
+end
+
+p "please enter how many number you want to store"
+number = gets.chomp.to_i
+s = {}
+for i in 1..number
+p "please enter your name"
+r = gets.chomp
+p "please enter your mobile number"
+rr = gets.chomp.to_i
+s[r] = rr
+end
+
+obj = Dynamically_putting.new(s)
+obj.main_1
